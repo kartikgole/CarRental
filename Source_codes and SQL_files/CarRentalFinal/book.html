@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
+Book cars based availability
+-->
+<html>
+    <head>
+        <title>Car Rental </title>
+
+           <link href="newstyles.css" rel="stylesheet" type="text/css" />
+
+     
+    </head>
+    <body>
+		
+		
+  	<ul>
+    	<li><a href="index.html">Home</a></li>
+        <li><a href="customer.html">Customers</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li id="active"><a href="">Book Car</a></li>
+		<li><a href="return.html">Return Car</a></li>
+		<li><a href="report.html">Report</a></li>
+    </ul>
+  
+	<br>
+<div class="form1">
+    <b><form action="available.php" method="post" >
+		<h1> BOOK A CAR </h1><br><br>
+Enter Customer ID: <input type="text" name="cbid"/><br><br>
+Enter date yyyy-mm-dd: <input type="text" name="Sdate"/><br><br>
+Select Car type: <select name = "Ctype">
+<option>Compact</option>
+<option>Medium</option>
+<option>SUV</option>
+</select><br><br>
+Rent type: <select name = "Rtype">
+<option>Daily</option>
+<option>Weekly</option>
+</select><br><br>
+No of days : <select name = "Days">
+<option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+</select><br><br>
+No of weeks : <select name = "Weeks">
+<option>0</option><option>1</option><option>2</option><option>3</option>
+</select><br><br>
+
+Enter Vehicle id: <input type="text" name="Vehicleid"/><br><br>
+<input type="submit" name="book" value="Book">
+</form></b>	
+
+<br>
+<b><form action="viewrental.php" method="post" >
+		<h2> VIEW ACTIVE & SCHEDULED RENTALS </h2>
+		<input type="submit" name="submit1" value="View">
+</form></b>
+    </div>	
+	
+	
+
+	
+	</body>
+	</html>
